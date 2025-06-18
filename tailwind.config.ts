@@ -65,9 +65,12 @@ export default {
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				md: 'calc(var(--radius) - 2px)', // Will be 10px if radius is 12px (0.75rem)
+				sm: 'calc(var(--radius) - 4px)'  // Will be 8px if radius is 12px (0.75rem)
 			},
+			fontFamily: { // Added font family
+        sans: ['var(--font-sans)'],
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
